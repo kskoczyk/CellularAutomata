@@ -1,0 +1,302 @@
+Renderer.1 {
+    backgroundcolor = #F5F5F5;
+    backgroundcolordisabled = #E6E6E6;
+    backgroundcolordown = #EBEBEB;
+    backgroundcolorhover = white;
+    bordercolor = #3C3C3C;
+    bordercolordisabled = #7D7D7D;
+    bordercolordown = black;
+    bordercolorfocused = #1E1EB4;
+    bordercolorhover = black;
+    borders = (1, 1, 1, 1);
+    textcolor = #3C3C3C;
+    textcolordisabled = #7D7D7D;
+    textcolordown = black;
+    textcolorhover = black;
+    texture = None;
+    texturedisabled = None;
+    texturedown = None;
+    texturefocused = None;
+    texturehover = None;
+}
+
+Renderer.2 {
+    backgroundcolor = transparent;
+    bordercolor = #3C3C3C;
+    borders = (0, 0, 0, 0);
+    textcolor = #3C3C3C;
+}
+
+Renderer.3 {
+    backgroundcolor = #F5F5F5;
+    backgroundcolordisabled = #E6E6E6;
+    backgroundcolorhover = white;
+    bordercolor = #3C3C3C;
+    bordercolordisabled = #7D7D7D;
+    bordercolorhover = black;
+    borders = (1, 1, 1, 1);
+    caretcolor = black;
+    caretwidth = 1;
+    defaulttextcolor = #A0A0A0;
+    padding = (0, 0, 0, 0);
+    selectedtextbackgroundcolor = #006EFF;
+    selectedtextcolor = white;
+    textcolor = #3C3C3C;
+    textcolordisabled = #7D7D7D;
+    texture = None;
+    texturedisabled = None;
+    texturefocused = None;
+    texturehover = None;
+}
+
+Button.ButtonPlay {
+    Position = (2.5%, 93.2%);
+    Size = (11.25%, 22);
+    Text = Play;
+    TextSize = 13;
+    renderer = &1;
+}
+
+Button.ButtonPause {
+    Enabled = false;
+    Position = (23.5%, 93.2%);
+    Size = (11.25%, 22);
+    Text = Pause;
+    TextSize = 13;
+    renderer = &1;
+}
+
+Button.ButtonPrevious {
+    Enabled = false;
+    Position = (43.25%, 93.2%);
+    Size = (11.25%, 22);
+    Text = Previous;
+    TextSize = 13;
+    renderer = &1;
+}
+
+Button.ButtonNext {
+    Enabled = false;
+    Position = (63.75%, 93.2%);
+    Size = (11.25%, 22);
+    Text = Next;
+    TextSize = 13;
+    renderer = &1;
+}
+
+Button.ButtonClear {
+    Position = (77.5%, 93.2%);
+    Size = (20%, 22);
+    Text = Clear;
+    TextSize = 13;
+    renderer = &1;
+}
+
+Button.ButtonSave {
+    Position = (77.5%, 40%);
+    Size = (20%, 22);
+    Text = Save;
+    TextSize = 13;
+    renderer = &1;
+}
+
+ComboBox.ComboBoxFiles {
+    ChangeItemOnScroll = true;
+    ExpandDirection = Down;
+    ItemsToDisplay = 3;
+    MaximumItems = 100;
+    Position = (77.5%, 5%);
+    Size = (20%, 22);
+    TextSize = 13;
+
+    Renderer {
+        arrowbackgroundcolor = #F5F5F5;
+        arrowbackgroundcolorhover = white;
+        arrowcolor = #3C3C3C;
+        arrowcolorhover = black;
+        backgroundcolor = #F5F5F5;
+        bordercolor = black;
+        borders = (1, 1, 1, 1);
+        padding = (0, 0, 0, 0);
+        textcolor = #3C3C3C;
+        texturearrow = None;
+        texturearrowhover = None;
+        texturebackground = None;
+
+        listbox {
+            backgroundcolor = #F5F5F5;
+            backgroundcolorhover = white;
+            bordercolor = black;
+            borders = (1, 1, 1, 1);
+            padding = (0, 0, 0, 0);
+            selectedbackgroundcolor = #006EFF;
+            selectedbackgroundcolorhover = #1E96FF;
+            selectedtextcolor = white;
+            textcolor = #3C3C3C;
+            textcolorhover = black;
+            texturebackground = None;
+
+            scrollbar {
+                arrowbackgroundcolor = #F5F5F5;
+                arrowbackgroundcolorhover = white;
+                arrowcolor = #3C3C3C;
+                arrowcolorhover = black;
+                texturearrowdown = None;
+                texturearrowdownhover = None;
+                texturearrowup = None;
+                texturearrowuphover = None;
+                texturethumb = None;
+                texturethumbhover = None;
+                texturetrack = None;
+                texturetrackhover = None;
+                thumbcolor = #DCDCDC;
+                thumbcolorhover = #E6E6E6;
+                trackcolor = #F5F5F5;
+            }
+        }
+    }
+}
+
+Button.ButtonLoad {
+    Position = (77.5%, 19.23%);
+    Size = (20%, 22);
+    Text = Load;
+    TextSize = 13;
+    renderer = &1;
+}
+
+Label.LabelSave {
+    AutoSize = true;
+    Position = (77.5%, 26.67%);
+    ScrollbarPolicy = Never;
+    Size = (126.2, 18);
+    Text = "Save current board";
+    TextSize = 13;
+    renderer = &2;
+}
+
+Label.LabelFigure {
+    Position = (77.5%, 1.6%);
+    ScrollbarPolicy = Never;
+    Size = (83.2, 18);
+    Text = "Select figure";
+    TextSize = 13;
+    renderer = &2;
+}
+
+EditBox.EditBoxSave {
+    DefaultText = "Savefile name";
+    Position = (77.5%, 30%);
+    Size = (20%, 22);
+    Text = default;
+    TextSize = 13;
+    renderer = &3;
+}
+
+CheckBox.CheckBoxRLE {
+    Checked = true;
+    Position = (77.5%, 35%);
+    Size = (22, 22);
+    TextSize = 13;
+
+    Renderer {
+        backgroundcolor = #F5F5F5;
+        backgroundcolordisabled = #E6E6E6;
+        backgroundcolorhover = white;
+        bordercolor = #3C3C3C;
+        bordercolordisabled = #7D7D7D;
+        bordercolorfocused = #1E1EB4;
+        bordercolorhover = black;
+        borders = (1, 1, 1, 1);
+        checkcolor = #3C3C3C;
+        checkcolordisabled = #7D7D7D;
+        checkcolorhover = black;
+        textcolor = #3C3C3C;
+        textcolordisabled = #7D7D7D;
+        textcolorhover = black;
+        textdistanceratio = 0.2;
+        texturechecked = None;
+        texturecheckeddisabled = None;
+        texturecheckedfocused = None;
+        texturecheckedhover = None;
+        textureunchecked = None;
+        textureuncheckeddisabled = None;
+        textureuncheckedfocused = None;
+        textureuncheckedhover = None;
+    }
+}
+
+Label.LabelRLE {
+    Position = (81.25%, 35.4%);
+    ScrollbarPolicy = Never;
+    Size = (82.2, 18);
+    Text = "RLE format?";
+    TextSize = 13;
+    renderer = &2;
+}
+
+Label.LabelStartingPosition {
+    AutoSize = true;
+    Position = (77.5%, 10%);
+    ScrollbarPolicy = Never;
+    Size = (107.2, 18);
+    Text = "Starting position";
+    TextSize = 13;
+    renderer = &2;
+}
+
+Label.LabelX {
+    AutoSize = true;
+    Position = (77.5%, 14.19%);
+    ScrollbarPolicy = Never;
+    Size = (12.2, 18);
+    Text = X;
+    TextSize = 13;
+    renderer = &2;
+}
+
+EditBox.EditBoxX {
+    Alignment = Center;
+    DefaultText = 0;
+    Position = (80%, 13.75%);
+    Size = (22, 22);
+    Text = 0;
+    TextSize = 13;
+    renderer = &3;
+}
+
+Label.LabelY {
+    AutoSize = true;
+    Position = (92.5%, 14.19%);
+    ScrollbarPolicy = Never;
+    Size = (11.2, 18);
+    Text = Y;
+    TextSize = 13;
+    renderer = &2;
+}
+
+EditBox.EditBoxY {
+    Alignment = Center;
+    DefaultText = 0;
+    Position = (94.625%, 13.75%);
+    Size = (22, 22);
+    Text = 0;
+    TextSize = 13;
+    renderer = &3;
+}
+
+Button.ButtonRandomize {
+    Position = (77.5%, 86.53%);
+    Size = (20%, 22);
+    Text = Randomize;
+    TextSize = 13;
+    renderer = &1;
+}
+
+Button.ButtonResize {
+    Position = (77.5%, 22.6%);
+    Size = (20%, 22);
+    Text = "Resize board";
+    TextSize = 13;
+    renderer = &1;
+}

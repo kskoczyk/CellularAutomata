@@ -1,0 +1,231 @@
+Renderer.1 {
+    backgroundcolor = #F5F5F5;
+    backgroundcolordisabled = #E6E6E6;
+    backgroundcolordown = #EBEBEB;
+    backgroundcolorhover = white;
+    bordercolor = #3C3C3C;
+    bordercolordisabled = #7D7D7D;
+    bordercolordown = black;
+    bordercolorfocused = #1E1EB4;
+    bordercolorhover = black;
+    borders = (1, 1, 1, 1);
+    textcolor = #3C3C3C;
+    textcolordisabled = #7D7D7D;
+    textcolordown = black;
+    textcolorhover = black;
+    texture = None;
+    texturedisabled = None;
+    texturedown = None;
+    texturefocused = None;
+    texturehover = None;
+}
+
+Renderer.2 {
+    backgroundcolor = transparent;
+    bordercolor = #3C3C3C;
+    borders = (0, 0, 0, 0);
+    textcolor = #3C3C3C;
+}
+
+Button.ButtonPlay {
+    Position = (2.5%, 93.2%);
+    Size = (11.25%, 22);
+    Text = Play;
+    TextSize = 13;
+    renderer = &1;
+}
+
+Button.ButtonPause {
+    Position = (23.5%, 93.2%);
+    Size = (11.25%, 22);
+    Text = Pause;
+    TextSize = 13;
+    renderer = &1;
+}
+
+Button.ButtonPrevious {
+    Position = (43.25%, 93.2%);
+    Size = (11.25%, 22);
+    Text = Previous;
+    TextSize = 13;
+    renderer = &1;
+}
+
+Button.ButtonNext {
+    Position = (63.75%, 93.2%);
+    Size = (11.25%, 22);
+    Text = Next;
+    TextSize = 13;
+    renderer = &1;
+}
+
+Button.ButtonClear {
+    Position = (77.5%, 93.2%);
+    Size = (20%, 22);
+    Text = Clear;
+    TextSize = 13;
+    renderer = &1;
+}
+
+Button.ButtonSave {
+    Position = (77.5%, 33.33%);
+    Size = (20%, 22);
+    Text = Save;
+    TextSize = 13;
+    renderer = &1;
+}
+
+ComboBox.ComboBoxFiles {
+    ChangeItemOnScroll = true;
+    ExpandDirection = Down;
+    Items = ["No files. . ."];
+    ItemsToDisplay = 1;
+    MaximumItems = 1;
+    Position = (77.5%, 5%);
+    Size = (20%, 22);
+    TextSize = 13;
+
+    Renderer {
+        arrowbackgroundcolor = #F5F5F5;
+        arrowbackgroundcolorhover = white;
+        arrowcolor = #3C3C3C;
+        arrowcolorhover = black;
+        backgroundcolor = #F5F5F5;
+        bordercolor = black;
+        borders = (1, 1, 1, 1);
+        padding = (0, 0, 0, 0);
+        textcolor = #3C3C3C;
+        texturearrow = None;
+        texturearrowhover = None;
+        texturebackground = None;
+
+        listbox {
+            backgroundcolor = #F5F5F5;
+            backgroundcolorhover = white;
+            bordercolor = black;
+            borders = (1, 1, 1, 1);
+            padding = (0, 0, 0, 0);
+            selectedbackgroundcolor = #006EFF;
+            selectedbackgroundcolorhover = #1E96FF;
+            selectedtextcolor = white;
+            textcolor = #3C3C3C;
+            textcolorhover = black;
+            texturebackground = None;
+
+            scrollbar {
+                arrowbackgroundcolor = #F5F5F5;
+                arrowbackgroundcolorhover = white;
+                arrowcolor = #3C3C3C;
+                arrowcolorhover = black;
+                texturearrowdown = None;
+                texturearrowdownhover = None;
+                texturearrowup = None;
+                texturearrowuphover = None;
+                texturethumb = None;
+                texturethumbhover = None;
+                texturetrack = None;
+                texturetrackhover = None;
+                thumbcolor = #DCDCDC;
+                thumbcolorhover = #E6E6E6;
+                trackcolor = #F5F5F5;
+            }
+        }
+    }
+}
+
+Button.ButtonLoad {
+    Position = (77.5%, 10%);
+    Size = (20%, 22);
+    Text = Load;
+    TextSize = 13;
+    renderer = &1;
+}
+
+Label.LabelSave {
+    AutoSize = true;
+    Position = (77.5%, 20%);
+    ScrollbarPolicy = Never;
+    Size = (126.2, 18);
+    Text = "Save current board";
+    TextSize = 13;
+    renderer = &2;
+}
+
+Label.LabelFigure {
+    Position = (77.5%, 1.6%);
+    ScrollbarPolicy = Never;
+    Size = (83.2, 18);
+    Text = "Select figure";
+    TextSize = 13;
+    renderer = &2;
+}
+
+EditBox.EditBoxSave {
+    DefaultText = "Savefile name";
+    Position = (77.5%, 23.33%);
+    Size = (20%, 22);
+    TextSize = 13;
+
+    Renderer {
+        backgroundcolor = #F5F5F5;
+        backgroundcolordisabled = #E6E6E6;
+        backgroundcolorhover = white;
+        bordercolor = #3C3C3C;
+        bordercolordisabled = #7D7D7D;
+        bordercolorhover = black;
+        borders = (1, 1, 1, 1);
+        caretcolor = black;
+        caretwidth = 1;
+        defaulttextcolor = #A0A0A0;
+        padding = (0, 0, 0, 0);
+        selectedtextbackgroundcolor = #006EFF;
+        selectedtextcolor = white;
+        textcolor = #3C3C3C;
+        textcolordisabled = #7D7D7D;
+        texture = None;
+        texturedisabled = None;
+        texturefocused = None;
+        texturehover = None;
+    }
+}
+
+CheckBox.CheckBoxRLE {
+    Position = (77.5%, 28.33%);
+    Size = (22, 22);
+    TextSize = 13;
+
+    Renderer {
+        backgroundcolor = #F5F5F5;
+        backgroundcolordisabled = #E6E6E6;
+        backgroundcolorhover = white;
+        bordercolor = #3C3C3C;
+        bordercolordisabled = #7D7D7D;
+        bordercolorfocused = #1E1EB4;
+        bordercolorhover = black;
+        borders = (1, 1, 1, 1);
+        checkcolor = #3C3C3C;
+        checkcolordisabled = #7D7D7D;
+        checkcolorhover = black;
+        textcolor = #3C3C3C;
+        textcolordisabled = #7D7D7D;
+        textcolorhover = black;
+        textdistanceratio = 0.2;
+        texturechecked = None;
+        texturecheckeddisabled = None;
+        texturecheckedfocused = None;
+        texturecheckedhover = None;
+        textureunchecked = None;
+        textureuncheckeddisabled = None;
+        textureuncheckedfocused = None;
+        textureuncheckedhover = None;
+    }
+}
+
+Label.LabelRLE {
+    Position = (81.25%, 28.73%);
+    ScrollbarPolicy = Never;
+    Size = (82.2, 18);
+    Text = "RLE format?";
+    TextSize = 13;
+    renderer = &2;
+}

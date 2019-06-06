@@ -1,0 +1,69 @@
+Renderer.1 {
+    arrowbackgroundcolor = #F5F5F5;
+    arrowbackgroundcolorhover = white;
+    arrowcolor = #3C3C3C;
+    arrowcolorhover = black;
+    backgroundcolor = #F5F5F5;
+    bordercolor = black;
+    borders = (1, 1, 1, 1);
+    padding = (0, 0, 0, 0);
+    textcolor = #3C3C3C;
+    texturearrow = None;
+    texturearrowhover = None;
+    texturebackground = None;
+
+    listbox {
+        backgroundcolor = #F5F5F5;
+        backgroundcolorhover = white;
+        bordercolor = black;
+        borders = (1, 1, 1, 1);
+        padding = (0, 0, 0, 0);
+        selectedbackgroundcolor = #006EFF;
+        selectedbackgroundcolorhover = #1E96FF;
+        selectedtextcolor = white;
+        textcolor = #3C3C3C;
+        textcolorhover = black;
+        texturebackground = None;
+
+        scrollbar {
+            arrowbackgroundcolor = #F5F5F5;
+            arrowbackgroundcolorhover = white;
+            arrowcolor = #3C3C3C;
+            arrowcolorhover = black;
+            texturearrowdown = None;
+            texturearrowdownhover = None;
+            texturearrowup = None;
+            texturearrowuphover = None;
+            texturethumb = None;
+            texturethumbhover = None;
+            texturetrack = None;
+            texturetrackhover = None;
+            thumbcolor = #DCDCDC;
+            thumbcolorhover = #E6E6E6;
+            trackcolor = #F5F5F5;
+        }
+    }
+}
+
+ComboBox.ComboBox1 {
+    ChangeItemOnScroll = true;
+    ExpandDirection = Down;
+    Items = ["No files. . ."];
+    ItemsToDisplay = 0;
+    MaximumItems = 0;
+    Position = (50%, 50%);
+    Size = (160, 22);
+    TextSize = 13;
+    renderer = &1;
+}
+
+ComboBox.ComboBox2 {
+    ChangeItemOnScroll = true;
+    ExpandDirection = Down;
+    ItemsToDisplay = 0;
+    MaximumItems = 0;
+    Position = (50, 60);
+    Size = (160, 22);
+    TextSize = 13;
+    renderer = &1;
+}

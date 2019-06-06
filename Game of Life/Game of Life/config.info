@@ -1,0 +1,9 @@
+map
+{
+    cylindrical true
+    topBottom true
+}
+history false
+{
+    rleHistory true
+}
