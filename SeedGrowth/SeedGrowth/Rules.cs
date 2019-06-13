@@ -17,5 +17,7 @@ namespace SeedGrowth
         //TODO: better handling
         public static bool RandomPentagonal { get; set; } = false;
         public static bool RandomHexagonal { get; set; } = false;
+        public static bool IsSeeded { get; set; } = false;
+        public static double Kt { get; set; } = 0.1;
     }
 }

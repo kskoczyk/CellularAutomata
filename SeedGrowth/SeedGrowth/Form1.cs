@@ -37,6 +37,7 @@ namespace SeedGrowth
 
             board = new Board();
             chosenSeed = board.Seeds[0];
+            Rules.Kt = 0.1 * Rules.Random.Next(1, 60);
         }
 
         private void Form1_Resize(object sender, EventArgs e)
@@ -238,6 +239,57 @@ namespace SeedGrowth
             board.IterateAllWithRadius(radius);
             g.Clear(Color.White);
             board.DrawBoard(pictureBox1, g, bitmap);
+        }
+
+        private void buttonEnergy_Click(object sender, EventArgs e)
+        {
+            board.ClearNeighbours();
+            board.DistributeEnergy();
+            board.CalculateEnergy();
+            g.Clear(Color.White);
+            board.DrawEnergy(pictureBox1, g, bitmap);
+        }
+
+        private void buttonMonteCarlo_Click(object sender, EventArgs e)
+        {
+            double.TryParse(textBoxGenerateRadius.Text, out double kt);
+            Rules.Kt = kt;
+
+            board.ClearNeighbours();
+            board.DistributeEnergy();
+            board.CalculateEnergy();
+            board.MonteCarlo();
+            g.Clear(Color.White);
+            board.DrawBoard(pictureBox1, g, bitmap);
+        }
+
+        private void buttonMonteCarloRadius_Click(object sender, EventArgs e)
+        {
+            int.TryParse(textBoxGenerateRadius.Text, out int radius);
+
+            if (radius > 0)
+            {
+                board.ClearNeighbours();
+                board.DistributeEnergyWithRadius(radius);
+                board.CalculateEnergy();
+                board.MonteCarloRadius(radius);
+                g.Clear(Color.White);
+                board.DrawBoard(pictureBox1, g, bitmap);
+            }
+        }
+
+        private void buttonEnergyRadius_Click(object sender, EventArgs e)
+        {
+            int.TryParse(textBoxGenerateRadius.Text, out int radius);
+
+            if (radius > 0)
+            {
+                board.ClearNeighbours();
+                board.DistributeEnergyWithRadius(radius);
+                board.CalculateEnergy();
+                g.Clear(Color.White);
+                board.DrawEnergyRadius(pictureBox1, g, bitmap, radius);
+            }
         }
     }
 }

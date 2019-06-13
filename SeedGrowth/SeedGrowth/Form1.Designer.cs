@@ -66,6 +66,9 @@
             this.labelCurrentSeed = new System.Windows.Forms.Label();
             this.pictureBoxSeed = new System.Windows.Forms.PictureBox();
             this.buttonSetSeed = new System.Windows.Forms.Button();
+            this.buttonEnergy = new System.Windows.Forms.Button();
+            this.buttonMonteCarlo = new System.Windows.Forms.Button();
+            this.textBoxKt = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxSeed)).BeginInit();
             this.SuspendLayout();
@@ -444,11 +447,43 @@
             this.buttonSetSeed.UseVisualStyleBackColor = true;
             this.buttonSetSeed.Click += new System.EventHandler(this.buttonSetSeed_Click);
             // 
+            // buttonEnergy
+            // 
+            this.buttonEnergy.Location = new System.Drawing.Point(771, 29);
+            this.buttonEnergy.Name = "buttonEnergy";
+            this.buttonEnergy.Size = new System.Drawing.Size(123, 25);
+            this.buttonEnergy.TabIndex = 38;
+            this.buttonEnergy.Text = "Draw energy";
+            this.buttonEnergy.UseVisualStyleBackColor = true;
+            this.buttonEnergy.Click += new System.EventHandler(this.buttonEnergy_Click);
+            // 
+            // buttonMonteCarlo
+            // 
+            this.buttonMonteCarlo.Location = new System.Drawing.Point(771, 60);
+            this.buttonMonteCarlo.Name = "buttonMonteCarlo";
+            this.buttonMonteCarlo.Size = new System.Drawing.Size(123, 23);
+            this.buttonMonteCarlo.TabIndex = 39;
+            this.buttonMonteCarlo.Text = "Monte Carlo";
+            this.buttonMonteCarlo.UseVisualStyleBackColor = true;
+            this.buttonMonteCarlo.Click += new System.EventHandler(this.buttonMonteCarlo_Click);
+            // 
+            // textBoxKt
+            // 
+            this.textBoxKt.Location = new System.Drawing.Point(818, 89);
+            this.textBoxKt.Name = "textBoxKt";
+            this.textBoxKt.Size = new System.Drawing.Size(27, 22);
+            this.textBoxKt.TabIndex = 40;
+            this.textBoxKt.Text = "0.1";
+            this.textBoxKt.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(902, 469);
+            this.Controls.Add(this.textBoxKt);
+            this.Controls.Add(this.buttonMonteCarlo);
+            this.Controls.Add(this.buttonEnergy);
             this.Controls.Add(this.buttonSetSeed);
             this.Controls.Add(this.pictureBoxSeed);
             this.Controls.Add(this.textBoxSetSeed);
@@ -537,6 +572,9 @@
         private System.Windows.Forms.Label labelCurrentSeed;
         private System.Windows.Forms.PictureBox pictureBoxSeed;
         private System.Windows.Forms.Button buttonSetSeed;
+        private System.Windows.Forms.Button buttonEnergy;
+        private System.Windows.Forms.Button buttonMonteCarlo;
+        private System.Windows.Forms.TextBox textBoxKt;
     }
 }
 
